@@ -1,0 +1,159 @@
+body{
+    background-color: rgba(11, 9, 54, 0.916);
+}
+label{
+    font-size: 2rem;
+    font-variant: small-caps;
+    color:rgb(0, 0, 0);
+}
+
+
+.nav-search{
+    justify-content: center;
+    gap:0;
+}
+
+
+.nav-search, .search-input{
+    align-items: center;
+    /* border:2px solid black; */
+    border-bottom-left-radius: 20px;
+    height:3rem;
+    box-shadow: none;
+}
+
+.nav-search,.nav-search .search-btn{
+    
+    border-top-right-radius: 20px;
+}
+
+
+.login-title{
+    font-size: 5rem;
+    margin-top: 3rem;
+    color:rgb(210, 250, 245);
+    text-transform: capitalize;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
+
+input{
+    padding-left: 4rem;
+
+    font-size: 1.8rem;
+    box-shadow: 2px 3px 4px 2px black;
+    transition: 0.1s all linear;
+}
+input:hover{
+    cursor: pointer;
+}
+
+input::placeholder{
+    font-style: italic;
+}
+
+button.submit-btn{
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-family: 'ABeeZee' ;
+    background-color: rgb(7, 33, 46);
+    transition: 0.3s all linear;
+    color:rgba(245, 245, 245, 0.916);
+    font-weight: bold;
+    box-shadow: 2px 3px 4px 2px black;
+    letter-spacing: 4px;
+}
+button.submit-btn:hover{
+    background-color: rgb(184, 230, 230);
+    color: teal;
+    letter-spacing: 12px;
+}
+
+.email-label{
+    position: relative;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 4px #0fa,
+      0 0 8px #0fa,
+      0 0 9px #0fa,
+      0 0 1px #0fa,
+      0 0 1px #0fa;
+}
+    
+
+.mail-icon{
+    position: absolute;
+    bottom: -2.5rem;
+    left:1rem;
+    color:rgba(0, 0, 0, 0.916);
+
+}
+
+.password-label{
+    position: relative;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 4px #0fa,
+      0 0 8px #0fa,
+      0 0 9px #0fa,
+      0 0 1px #0fa,
+      0 0 1px #0fa;
+}
+
+.password-icon{
+    position: absolute;
+    bottom: -2.5rem;
+    left:1rem;
+    color:rgba(0, 0, 0, 0.916);
+
+}
+
+input{
+    background-color: rgb(120, 233, 253);
+}
+
+
+@media(max-width:768px){
+    .login-title{
+
+        font-size: 4rem;
+    }
+}
+
+@media(min-width:1200px){
+    .email-label,.password-label{
+        font-size: 2.5rem;
+    }
+    .password-icon,.mail-icon{
+        bottom:-3.4rem;
+    }
+
+   input{
+    height:4rem;
+   }
+
+   .login-title{
+    margin-top: 1rem;
+   }
+   .search-input{
+    width: 34rem;
+}
+
+.nav-search{
+    margin-right: 5%;
+}
+}
+
+

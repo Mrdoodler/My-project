@@ -1,0 +1,324 @@
+.mtitle{ /*Dont know why font family not working here cant add fancy fonts*/
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: 'ABeeZee' ;
+  font-weight: 600;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    
+    text-shadow: 0 0 10px #fff, 0 0 5px #b8b1ff, 0 0 10px #877cfe, 0 0 20px #4d59ff, 0 0 20px #594dff, 0 0 30px #654dff, 0 0 40px #4d4dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00d3e6, 0 0 10px #00e6cb, 0 0 15px #00e6d7, 0 0 20px #00e6e6, 0 0 35px #00e6db;
+  }
+}
+
+.mtitle:hover{
+  color: #00e6cb ;
+}
+
+
+/* For footer Links */
+.footer-link{
+  color: white;
+}
+
+/* Cart glowing effect learned from w3school*/
+.cart{
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00d3e6, 0 0 10px #00e6cb, 0 0 15px #00e6d7, 0 0 20px #00e6e6, 0 0 35px #00e6db;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 5px #b8b1ff, 0 0 10px #877cfe, 0 0 20px #4d59ff, 0 0 20px #594dff, 0 0 30px #654dff, 0 0 40px #4d4dff;
+  }
+}
+
+.second-nav{
+  border: 0.10rem solid black;
+}
+
+.searchbox{
+  width: 25rem;
+}
+
+/*Second nav bar mouse hover effects*/
+.seclinks{
+  font-weight: 500;
+  color: rgb(11, 15, 26);
+}
+.seclinks:hover{
+  color: teal;
+    border: 0.1rem solid #fff;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 0.2rem #1369fe,
+                0 0 0.4rem #133afe,
+                0 0 1.4rem #132efe,
+                inset 0 0 0.6rem #1327fe;
+  }
+.menu{
+    border: 0.05rem groove blue;
+    box-shadow: 0.1rem 0.1rem 0.1rem #000000;
+    padding: 0.4em;
+}
+
+
+/*Start*/
+section.featured{
+  background-color:rgba(0,0,0,0.8);
+  color:rgb(210, 218, 250);
+}
+
+/* ! carousel item */
+
+.carousel-item{
+  height:38rem;
+  position: relative;
+}
+
+/* ! when the screen is large */
+
+.container.four-item-slide{
+  position: absolute;
+  top:2rem;
+  left:5%;
+  right:5%;
+}
+
+/* ! when the screen is medium */
+
+.container.two-item-slide{
+  position: absolute;
+  top:1rem;
+  left:3rem;
+  right:3rem;
+
+}
+
+
+
+.container.two-item-slide .card{
+  height:29rem;
+}
+
+
+.container.four-item-slide .card .card-body{
+  background-color: rgb(9, 157, 194) !important;
+  color:rgb(1, 1, 50);
+}
+
+/* ! when the screen is small */
+.container.one-item-slide{
+  position: absolute;
+  top:3rem;
+  left: 0rem;
+  right: 0rem;
+}
+
+/* ! carousel */
+.carousel{
+ background-color: rgb(10, 186, 116);;
+}
+
+
+/* ! carousel previous button */
+
+
+
+.carousel-control-prev-icon{
+  position: absolute;
+  left:0rem;
+  background-color: rgb(3, 152, 244);
+  color:rgb(255, 255, 255);
+  width:3.5rem;
+  height:3.5rem;
+}
+.carousel-control-next-icon{
+  position: absolute;
+  right:0rem;
+  background-color:  rgb(3, 152, 244);
+  color:rgb(255, 255, 255);
+  width:3.5rem;
+  height:3.5rem;
+}
+
+/* ! carousel item card with box-shadow */
+
+.carousel .carousel-item .card {
+  background-color: rgb(9, 157, 194) ;
+  color:rgb(1, 1, 50);
+  box-shadow: 2px 3px 14px 5px black;
+}
+
+
+
+/* ! carousel item card body */
+
+.carousel .carousel-item .card .card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* ! featured section title*/
+
+.featured h4{
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+  
+  font-family: "Vibur", sans-serif;
+  letter-spacing: 5px;
+  padding:1rem 0;
+}
+
+.carousel-item .card img{
+  height:16rem;
+  background:rgb(142, 226, 247);
+  object-fit:contain;
+    
+}
+.carousel-item .card .card-title{
+  font-family: 'Roboto Flex';
+}
+.carousel-item .card .card-text{
+  font-family: 'Roboto Flex';
+  font-size: 0.8rem;
+  text-shadow: 2px 4px 9px rgba(0, 4, 5, 0.5);
+  font-weight: 500;
+ 
+}
+/*end*/
+
+/*hero*/
+.hero{
+  background: url('https://images.pexels.com/photos/5864245/pexels-photo-5864245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:38.5rem;
+  padding:0;
+}
+.hero .overlay{
+  background: rgba(0, 0, 0, 0.5);
+  height:100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+/* ! name and slogan container */
+
+.name-n-slogan-container{
+  height:24rem;
+  display: flex;
+  color:rgb(248, 250, 252);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 60%;
+  transition: 1s all linear;
+  -webkit-animation: glowbox 1s ease-in-out infinite alternate;
+  -moz-animation: glowbox 1s ease-in-out infinite alternate;
+  animation: glowbox 1s ease-in-out infinite alternate;
+}
+
+@keyframes glowbox {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0f00e6, 0 0 40px #0f00e6, 0 0 50px  #0f00e6, 0 0 60px  #0f00e6, 0 0 70px  #0f00e6;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #91dbe7, 0 0 40px #91dbe7, 0 0 50px #91dbe7, 0 0 60px #91dbe7, 0 0 70px #91dbe7, 0 0 80px #91dbe7;
+  }
+}
+
+
+/* ! crown icon */
+.name-n-slogan-container i{
+  font-size: 6rem;
+  border: 3px solid rgb(135, 167, 201);
+  padding:2rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-animation: glowbox 1s ease-in-out infinite alternate;
+  -moz-animation: glowbox 1s ease-in-out infinite alternate;
+  animation: glowbox 1s ease-in-out infinite alternate;
+}
+
+@keyframes glowbox {
+  from {
+    text-shadow: 0 0 20px #fff, 0 0 30px #91dbe7, 0 0 40px #91dbe7, 0 0 50px #91dbe7, 0 0 60px #91dbe7, 0 0 70px #91dbe7, 0 0 80px #91dbe7;
+    
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0f00e6, 0 0 40px #0f00e6, 0 0 50px  #0f00e6, 0 0 60px  #0f00e6, 0 0 70px  #0f00e6;
+    
+  }
+}
+/*hero end*/
+
+/*Glow animation*/
+
+
+/*Slogan*/
+.name-n-slogan-container .slogan{
+  font-size: 2rem;
+  font-family: 'Aclonica';
+  font-variant: small-caps;
+  transition: 0.5s all linear;
+}
+.name-n-slogan-container .name{
+  font-family: 'Aclonica';
+  font-size: 6rem;
+  transition: 0.2s all linear;
+}
+
+.name-n-slogan-container i:hover {
+  cursor: pointer;
+  scale:1.1;
+}
+
+.name-n-slogan-container i:hover + .name {
+  text-shadow: 23px 28px 14px black;
+  letter-spacing: 6px;
+}
+
+/* ! card btn primary */
+
+.card .btn-primary{
+  background-color:rgba(1, 10, 21, 0.916);
+  color:rgb(251, 255, 254);
+  font-variant: small-caps;
+  border:3px double rgb(250, 210, 250);
+}
+
+.card .btn-primary:hover{
+  background-color:rgba(110, 144, 186, 0.916);
+  color:rgb(1, 49, 37);
+}
